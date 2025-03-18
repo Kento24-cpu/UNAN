@@ -5,4 +5,4 @@ Repositorio para ejercicios propuestos en las clases de "Programación Estructur
 Se estaran subiendo los ejercicios propuestos con regularidad y se puede obtener acceso a estos ejercicios siempre y cuando el dueño del repositorio este de acuerdo en compartirlo.
 
 > [!NOTE]
-> Estos ejercicios funcionan para diversas situaciones, ya sea para ayuda o inspiracion para futuros programas propuestos por las clases, tambien funcionan como recordatorio y un tipo de ayuda.
+> Estos ejercicios funcionan para diversas situaciones, ya sea para ayuda o inspiracion para futuros programas propuestos por las clases, tambien funcionan como recordatorio de algunas funciones y algoritmos.

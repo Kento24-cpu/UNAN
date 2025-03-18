@@ -1,18 +1,25 @@
 #include <stdio.h>
-
-float calif, exm, trabjof, prom;
-int not, not1, not2;
+#include <stdlib.h>
 
 int main()
 {
-    printf("Promedio de clase: Algoritmo\nNotas de los tres parciales:\n");
+    float notF, promCalif;
+    int not, not1, not2, exm, trabjof;
+
+    system("clear");
+
+    printf("Notas de los tres parciales: (0 - 10)\n");
     scanf("%i %i %i", &not, &not1, &not2);
-    printf("Nota del examen:\n");
-    scanf("%f", &exm);
-    printf("Nota del trabajo final:\n");
-    scanf("%f", &trabjof);
+    printf("Nota del examen: (0 - 10)\n");
+    scanf("%i", &exm);
+    printf("Nota del trabajo final: (0 - 10)\n");
+    scanf("%i", &trabjof);
 
-    prom = ((not+not1 + not2 + exm + trabjof) / 5);
+    promCalif = ((not+not1 + not2) / 3);
 
-    printf("Su nota final es de: %f", prom);
+    notF = (promCalif * 0.55) + (exm * 0.3) + (trabjof * 0.15);
+
+    system("clear");
+
+    printf("Su nota final es de: %.2f", notF);
 }

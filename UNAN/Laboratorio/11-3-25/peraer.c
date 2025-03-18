@@ -1,16 +1,19 @@
 #include <stdio.h>
-
-float per, area, lad, lad1, lad2, lad3, base, altura;
+#include <stdlib.h>
 
 int main()
 {
-    printf("Calcular area y perimetro de un rectangulo\nIngrese el valor de los lados:\n");
-    scanf("%f %f %f %f", &lad, &lad1, &lad2, &lad3);
+    float per, area, base, altura;
+
+    system("clear");
+
     printf("Valor de la base y de la altura:\n");
     scanf("%f %f", &base, &altura);
 
-    per = lad + lad1 + lad2 + lad3;
     area = base * altura;
+    per = 2 * (base + altura);
+
+    system("clear");
 
     printf("El perimetro del rectangulo es: %.2f y el area es: %.2f", per, area);
 

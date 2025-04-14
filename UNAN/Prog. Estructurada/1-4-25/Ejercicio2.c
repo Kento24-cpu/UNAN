@@ -18,7 +18,7 @@
 
 void valClima(int cel)
 {
-    if (cel >= 30)
+    if (cel > 29)
     {
         if (cel >= 40)
         {
@@ -26,7 +26,7 @@ void valClima(int cel)
         }
         printf("Hace calor");
     }
-    else if (cel < 30)
+    if (cel < 30)
     {
         if (cel < 15)
         {
@@ -38,12 +38,14 @@ void valClima(int cel)
 
 int main()
 {
+    system("clear");
+
     int cel;
 
-    printf("Escribe la cantidad de celsious:");
+    printf("Escribe la cantidad de celsious:\n");
     scanf("%i", &cel);
 
-    valClima();
+    valClima(cel);
 
-    return 0;
+    return 1;
 }

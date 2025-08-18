@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diseño Web | Clase 3</title>
+        <link rel="stylesheet" href="../../src/style.css">
+        <link rel="shortcut icon" href="../../assets/images/ESCUDO_UNANLEON_1812.png">
+</head>
+<body>
+
+        <div class="title">
+                <h1>Universidad Nacional Autonoma de Nicaragua<br>UNAN - Leon</h1>
+                <h2>Diseño de Pagina Web.</h2>
+                <h3>Clase 3: Formularios HTML.</h3>
+        </div>
+
+        <hr>
+
+        <div class="nav">
+                <h4 class="nav__title">Fourth page (4).</h4>
+                <h5>Enlaces a pagina</h5>
+                <nav>
+                        <ul>
+                                <li><a href="./page1.html">Pagina 1</a></li>
+                                <li><a href="./page2.html">Pagina 2</a></li>
+                                <li><a href="./page3.html">Pagina 3</a></li>
+                                <li><a href="../../index.html">Main page.</a></li>
+                        </ul>
+                </nav>
+
+                <h5 class="nav__title">Tablas</h5>
+                <table width="400px" border="1">
+                        <tr><th>Nombre</th><th>Edad</th></tr>
+                        <tr><td>Kevin Saravia</td><td>19</td></tr>
+                        <tr><td>Yader Rojas</td><td>20</td></tr>
+                </table>
+
+                <h5 class="nav__title">Formularios</h5>
+                <form action="">
+                        <fieldset>
+                                <legend>Datos Personales</legend>
+                                <label for="name">Nombre:</label>
+                                <input id="name" type="text" placeholder="Escriba su nombre"><br>
+                                <label for="surname">Apellido:</label>
+                                <input id="surname" type="text" placeholder="Escriba su apellido"><br>
+                                <label for="email">Correo:</label>
+                                <input id="email" type="email" placeholder="Escriba su correo"><br>
+                                <label for="password">contraseña:</label>
+                                <input id="password" type="password" placeholder="Escriba su contraseña">
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                                <legend>Generos</legend>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" value="genre--masculino" id="masculino" name="genre"><br>
+                                <label for="femenino">femenino</label>
+                                <input type="radio" value="genre--femenino" id="femenino" name="genre"><br>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                                <legend>Otros Datos</legend>
+                                <label for="navegador">Navegador favorito:</label>
+                                <select name="navegador" id="navegador">
+                                        <option disabled selected>Seleccione una opcion</option>
+                                        <option value="nav-1">Mozilla</option>
+                                        <option value="nav-2">Chrome</option>
+                                        <option value="nav-3">Brave</option>
+                                </select><br>
+                                <label for="color">Color favorito:</label>
+                                <input type="color" id="color"><br>
+                                <label for="range">Puntuacion del formulario:</label>
+                                <span>15</span>
+                                <input type="range" id="range" min="15" max="50">
+                                <span>50</span>
+                        </fieldset>
+                        <input type="submit">
+                        <input type="reset">
+                </form>
+
+        </div>
+
+</body>
+</html>

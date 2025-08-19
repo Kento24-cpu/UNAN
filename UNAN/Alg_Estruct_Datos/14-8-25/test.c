@@ -1,6 +1,3 @@
-// Hacer un programa en C que llene un array de 10 enteros con números aleatorios del 0 al 99
-// luego de eso los muestre en pantalla y diga cuál es el elemento mayor y cuántas veces se repite.
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -15,8 +12,6 @@ int main()
 {
         int a[TAM];
         int max, conteo;
-
-        system("clear");
 
         srand(time(NULL));
 

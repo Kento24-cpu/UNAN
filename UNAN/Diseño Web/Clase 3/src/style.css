@@ -35,6 +35,16 @@ li {
         padding: 2px;
 }
 
+form {
+        margin: 1rem;
+        background-color: beige;
+        padding: 1rem;
+}
+
+fieldset {
+        padding: 1rem;
+}
+
 .title {
         display: flex;
         flex-direction: column;

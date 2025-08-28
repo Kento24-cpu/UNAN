@@ -1,0 +1,92 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f2f5;
+}
+
+.title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+}
+
+.title__img {
+        margin: auto;
+        height: 200px;
+        width: 200px;
+}
+
+a {
+        text-decoration: none;
+        transition: all .5s;
+        padding: 1rem;
+        border-radius: 10px;
+        color: #000;
+}
+
+a:hover {
+        background-color: blue;
+        color: #fff;
+}
+
+.links {
+        text-align: center;
+        padding: 4rem;
+}
+
+/* TARJETA */
+.tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: #fff;
+        border: 4px dashed #0034ef;
+        border-radius: 10px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 50%;
+        justify-content: center;
+}
+
+.tarjeta__title {
+        font-size: 30px;
+        margin-top: 0;
+        text-align: center;
+        color: #333333;
+}
+
+.tarjeta__name {
+        font-size: 21px;
+}
+
+.tarjeta .puesto {
+        color: #007bff;
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+}
+
+.tarjeta .contacto {
+        color: #6c757d;
+        text-align: center;
+        font-size: 14px;
+}
+
+.tarjeta__img {
+        height: 3rem;
+        width: 3rem;
+}
+
+.divisor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}

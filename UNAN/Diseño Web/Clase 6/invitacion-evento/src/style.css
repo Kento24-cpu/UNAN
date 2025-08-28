@@ -1,0 +1,93 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+CA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: url(../assets/images/back.jpeg)no-repeat center center/cover;
+}
+
+#invitation-card {
+        display: flex;
+        flex-direction: column;
+        width: 78%;
+        margin: 6rem auto;
+        border: 6px dashed #23e4fe;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        background: #f0f2f5;
+        border-radius: 10px;
+}
+
+header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+}
+
+hr {
+        margin: .5rem auto;
+        width: 32rem;
+        border: 1px solid #000;
+}
+
+.card-title__img {
+        height: 150px;
+        width: 150px;
+}
+
+.card-title h1 {
+        font-family: "Playwrite CA", cursive;
+}
+
+.card-body {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        flex-direction: column;
+}
+
+p {
+        padding: .5rem 8rem;
+        font-size: 20px;
+        color: #555555;
+}
+
+.info-event {
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+}
+
+.card-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.card-footer__button {
+        margin: 2rem;
+}
+
+a {
+        text-decoration: none;
+        color: #000;
+        background-color: #23e4fe;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid #000;
+        transition: all .5s;
+}
+
+a:hover {
+        color: #fefefe;
+        background: #23feef;
+        border: 1px solid #fff;
+}

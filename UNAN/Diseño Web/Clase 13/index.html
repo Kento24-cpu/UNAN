@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+        <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+        <h1>Ejemplo de formulario</h1>
+        <form id="formulario" onsubmit="return saveInfo();">
+                Nombre: <input type="text" id="name"><br>
+                Apellido: <input type="text" id="surname"><br>
+                Correo: <input type="email" id="email"><br>
+                Sexo: <label>
+                        <input type="radio" name="sexo" value="m">Masculino
+                </label>
+                <label>
+                        <input type="radio" name="sexo" value="f">Femenino
+                </label><br>
+                <label>
+                        <input type="checkbox" name="condition" id="conditions"> Acepto
+                </label> <br>
+                Opciones:
+                <select name="selector" id="selection">
+                        <option value="none" disabled selected>Seleccione una opcion</option>
+                        <option value="opt1">Opcion 1</option>
+                        <option value="opt2">Opcion 2</option>
+                        <option value="opt3">Opcion 3</option>
+                        <option value="opt4">Opcion 4</option>
+                </select> <br>
+                <input type="submit" value="Enviar" id="submit">
+                <input type="reset">
+        </form>
+
+        <script src="src/main.js"></script>
+</body>
+</html>

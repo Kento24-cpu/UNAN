@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Estudiantes</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="assets/images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/37a8a30840.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario de Estudiantes</h1>
+
+    <form id="formulario">
+      <div class="form__buttons">
+        <input
+          type="button"
+          value="Nuevo"
+          class="button__up button-up1"
+          id="newBtn"
+        />
+        <input
+          type="button"
+          value="Guardar"
+          class="button__up button-up2"
+          id="saveBtn"
+        />
+        <input
+          type="button"
+          value="Cancelar"
+          class="button__up button-up3"
+          id="cancelBtn"
+        />
+        <input
+          type="button"
+          value="Eliminar"
+          class="button__up button-up4"
+          id="deleteBtn"
+        />
+      </div>
+
+      <hr />
+
+      <div class="form__inputs">
+        <label>
+          Nombre: <br />
+          <input type="text" class="input__bar" id="name" disabled />
+        </label>
+        <br />
+        <br />
+        <label>
+          Apellido: <br />
+          <input type="text" class="input__bar" id="surname" disabled />
+        </label>
+        <br />
+        <br />
+        <label>
+          Carrera: <br />
+          <select name="option" id="options" class="input__bar" disabled>
+            <option value="none" disabled selected>
+              Seleccione la carrera
+            </option>
+            <option>Sistemas</option>
+            <option>Telematica</option>
+          </select>
+        </label>
+        <br />
+        <br />
+        <label>
+          Sexo: <br />
+          <input
+            type="radio"
+            name="sexo"
+            value="Masculino"
+            class="input__radio"
+            disabled
+          />
+          Masculino
+          <input
+            type="radio"
+            name="sexo"
+            value="Femenino"
+            class="input__radio"
+            disabled
+          />
+          Femenino
+        </label>
+        <br />
+        <br />
+        <input type="checkbox" id="egresado" disabled />
+        <span>Egresado?</span>
+      </div>
+
+      <div class="form__navigation">
+        <input
+          type="button"
+          value="<<"
+          class="button__navigation navigation1"
+          id="primero"
+        />
+        <input
+          type="button"
+          value="<"
+          class="button__navigation navigation2"
+          id="anterior"
+        />
+        <input
+          type="button"
+          value=">"
+          class="button__navigation navigation2"
+          id="siguiente"
+        />
+        <input
+          type="button"
+          value=">>"
+          class="button__navigation navigation1"
+          id="ultimo"
+        />
+      </div>
+    </form>
+    </div>
+
+    <div class="element">
+      <h2>Buscar Elemento:</h2>
+      <div class="form__search">
+        <input type="text" id="search" placeholder="Buscar por Nombre" />
+        <button type="button" class="searchBtn" id="searchBtn" onclick="view()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="search-box" id="visualizar"></div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>

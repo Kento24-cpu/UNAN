@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica DOM | Agregar</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../../assets/images/logo.png">
+</head>
+<body>
+
+  <header>
+    <div class="header__separador">
+      <img src="../../assets/images/logo.png" alt="Logo" class="logo">
+      <h1>Manipulacion de DOM</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="../../index.html" target="_blank">Inicio</a></li>
+        <li class="current-page"><a href="#">Agregar</a></li>
+        <li><a href="./help.html" target="_blank">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="add-page">
+    <section>
+      <div class="table">
+        <h2 style="text-align: center; margin-bottom: 1rem;">Registro de estudiantes</h2>
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Carrera</th>
+              <th>Sexo</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <form id="add-form">
+
+        <div class="form__buttons">
+          <button type="button" id="btnNuevo" class="button1">Nuevo</button>
+          <button type="button" id="btnAgregar" disabled class="button2">Agregar</button>
+          <button type="button" id="btnCancelar" disabled class="button3">Cancelar</button>
+        </div>
+
+        <hr>
+
+        <div class="form__inputs">
+          <label> Nombre: <br>
+            <input type="text" id="nombre" class="input__text" disabled>
+          </label> <br><br>
+          <label> Apellido: <br>
+            <input type="text" id="apellido" class="input__text" disabled>
+          </label> <br><br>
+          <label> Carrera: <br>
+            <select id="carrera" disabled>
+              <option value="" disabled selected>Seleccione una carrera</option>
+              <option value="Sistema">Ingenieria en Sistemas</option>
+              <option value="Telematica">Telematica</option>
+              <option value="Medicina">Medicina</option>
+            </select>
+          </label> <br><br>
+          <label> Sexo: <br>
+            <input type="radio" name="sexo" value="M" class="input__radio" disabled> Masculino
+            <input type="radio" name="sexo" value="F" class="input__radio" disabled> Femenino
+          </label>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; Made by Kevin Saravia - UNAN Leon 2025</small>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
